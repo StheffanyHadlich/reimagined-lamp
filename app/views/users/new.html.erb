@@ -1,0 +1,6 @@
+<h1> New User#new</h1>
+<%= @user.errors.messages %>
+<%= form_for @user, url: { action: "create" } do | f | %>
+  <%= f.text_field :name %>
+  <%= f.submit "Create" %>
+<% end %>

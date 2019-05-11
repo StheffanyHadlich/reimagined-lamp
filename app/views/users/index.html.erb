@@ -1,0 +1,11 @@
+<h1>Users#index</h1>
+<p>Find me in app/views/users/index.html.erb</p>
+<p>Users:</p>
+
+<% @users.each do |user| %>
+  <p id="<%= user.id %>">
+    <%= user.name %>
+    <%= link_to user.name, user_path(user) %>
+    <%= link_to "delete", user_path(user), method: :delete, remote: true %>
+  </p>
+<% end %>
