@@ -212,7 +212,7 @@ DEPENDENCIES
   rails (~> 5.2.3)
   sass-rails (~> 5.0)
   selenium-webdriver
-  simplecov (~> 0.16.1)
+  simplecov
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
