@@ -2,10 +2,10 @@
 
 one:
   name: MyString
-  bon_date: 2019-05-11
+  born_date: 2019-05-11
   user: one
 
 two:
   name: MyString
-  bon_date: 2019-05-11
+  born_date: 2019-05-11
   user: two
