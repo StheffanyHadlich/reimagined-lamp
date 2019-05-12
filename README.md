@@ -1,24 +1,42 @@
-# README
+# Reimagined lamp
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+It is a rails telephone book no one ask for, but I need to practice :)
 
-Things you may want to cover:
+## Instalation
 
-* Ruby version
+First clone this repository
 
-* System dependencies
+```
+ $ git clone https://github.com/StheffanyHadlich/reimagined-lamp.git
 
-* Configuration
+ $ cd reimagined-lamp
 
-* Database creation
+```
 
-* Database initialization
+Then install the dependencies and run the migrations
 
-* How to run the test suite
+```
+$ bundle install
 
-* Services (job queues, cache servers, search engines, etc.)
+$ rails db:migrate
+```
 
-* Deployment instructions
+and now you can run the application with
 
-* ...
+```
+$ rails s
+```
+
+it should be running on ```localhost:3000```
+
+## Tests
+
+Tests can be executed with
+
+```
+$ rake
+```
+____________________________
+
+
+
