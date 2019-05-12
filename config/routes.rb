@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  resources :users
+  root :to => "users#index"
+  resources :users do
+    resources :contacts
+  end
 end

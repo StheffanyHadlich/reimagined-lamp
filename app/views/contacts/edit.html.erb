@@ -1,0 +1,6 @@
+<h1>Edit Contacts</h1>
+<%= @contact.errors.messages %>
+<%= form_for @contact, url: { action: "update" } do | f | %>
+  <%= f.text_field :name %>
+  <%= f.submit "Update" %>
+<% end %>
