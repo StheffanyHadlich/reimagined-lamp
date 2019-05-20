@@ -1,0 +1,9 @@
+<h1>Contacts: </h1>
+
+<% @contacts.each do | contact | %>
+  <p id="<%= contact.id %>">
+    <%= contact.inspect %>
+    <%= link_to contact.name, user_contact_path(contact.user_id, contact.id) %>
+    <%= link_to 'delete', user_contact_path(contact.user_id, contact.id), method: :delete, remote: true %>
+  </p>
+<% end %>
