@@ -1,0 +1,9 @@
+<h1>Phones: </h1>
+
+<% @phones.each do | phone | %>
+  <p id="<%= phone.id %>">
+    <%= phone.number %>
+    <%= link_to phone.number, user_contact_phone_path(params[:user_id], phone.contact_id, phone.id) %>
+    <%= link_to 'delete', user_contact_phone_path(params[:user_id], phone.contact_id, phone.id), method: :delete, remote: true %>
+  </p>
+<% end %>
